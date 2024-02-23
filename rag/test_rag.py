@@ -22,7 +22,7 @@ import chains
 
 @pytest.fixture
 def chain_1():
-    chain = chains.AssistantChain("Sam").get_chain()
+    chain = chains.AssistantChain("Simba").get_chain()
 
     return chain
 
@@ -50,7 +50,7 @@ def test_name(chain_1):
     print("Question: " + input_text)
     print("Answer:   " + output_text)
 
-    assert "sam" in output_text.lower()
+    assert "simba" in output_text.lower()
 
 
 def test_basic_arithmetic(chain_1):
